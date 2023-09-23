@@ -1,0 +1,64 @@
+
+nav, ul {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+   }
+
+ul {
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+
+a {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+logo:hover {
+    cursor: default;
+}
+
+/* Toggle Button (Hamburger Menu) */
+.toggle-btn {
+    display: none; /* Hidden by default for larger screens */
+    cursor: pointer;   
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+  
+  /* Dropdown Menu (Hidden by default) */
+  .dropdown-menu {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    width: 300px;
+    overflow: hidden;
+    top: 60px;
+    right: 2rem;
+    border-radius: 15px;
+    transition: var(--transition);
+    background: var(--color-grey);
+  }
+
+  .dropdown-menu.open {
+    height: 240px;
+  }
+  
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
