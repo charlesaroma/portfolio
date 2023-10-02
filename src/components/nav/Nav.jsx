@@ -7,13 +7,16 @@ import {BiBook} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import { BiMessageSquare} from 'react-icons/bi'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import techgen from '../../assets/techgen.png'
 
 
 const Nav = () => {
 
   return (
     <nav className='container'> 
-      <div className='logo'>Aroma</div>
+      <div className='logo'>
+        <img src={techgen} alt='' className='logo'/>
+      </div>
       <ul>
         <li><a href='#header'><AiOutlineHome/>Home</a></li>
         <li><a href='#about'><AiOutlineUser/>About</a></li>          
